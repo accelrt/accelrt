@@ -4,7 +4,7 @@ function ProspectusButton() {
   return (
     <>
       <a
-        className="no-underline outline p-4"
+        className="no-underline outline p-4 w-fit"
         href="/submerged_prospectus.pdf"
         target="_blank"
         rel="noopener noreferrer"
