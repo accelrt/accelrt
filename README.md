@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# accelRT — Main Website
 
-## Getting Started
+## Purpose
 
-First, run the development server:
+The public-facing website for accelRT:
+
+- Organization overview, mission, team, sponsors, and resources
+- News, blog, and global event index (not individual event microsites)
+- Page for partners/sponsors
+
+## Tech stack
+
+- Next.js
+- Bun
+- Cloudflare Pages
+
+## Getting started
+
+Prerequisites
+
+- Bun (latest stable) — https://bun.sh
+
+Install
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repo-url>
+cd accelrt-website
+bun install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Development
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+bun run dev
+# then open http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Contributing
 
-## Learn More
+We run a very lean operation
 
-To learn more about Next.js, take a look at the following resources:
+- Pull
+- Code
+- Commit
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Information for AI agents follows:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project structure (example)
 
-## Deploy on Vercel
+- public/ — static assets
+- src/
+  - app/ — Next.js pages and routes
+  - components/ — UI components
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Conventions & best practices
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Keep single source of truth for site config in config/site.\*
+- Use semantic HTML, React and follow a11y guidelines
+- Optimize images with next/image and serve responsive sizes
+- Add meta tags and Open Graph for SEO and social sharing
+- Keep environment secrets out of the repo
