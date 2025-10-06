@@ -1,5 +1,4 @@
 import TeamMemberGrid from "./TeamMemberGrid";
-import Header from "./Header";
 import ProspectusButton from "./Prospectus";
 import "./overlay.css";
 
@@ -16,7 +15,7 @@ export default function Home() {
           <br />
           <h2 className="text-2xl font-bold">Currently Planning — Submerged</h2>
           <p>
-            AccelRT's upcoming 36-hour hackathon designed for high school
+            AccelRT&apos;s upcoming 36-hour hackathon designed for high school
             students to dive into a world transformed by rising sea levels.
             <br /> Set in Sydney, this event challenges teams to invent bold,
             unconventional solutions — software or hardware — that help people
