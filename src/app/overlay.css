@@ -1,4 +1,4 @@
-.linear-blur::after {
+.linear-gradient::after {
   content: "";
   position: fixed;
   top: 0;
@@ -10,8 +10,8 @@
   background-image: linear-gradient(
     to bottom,
     white 0%,
-    transparent 20%,
-    transparent 80%,
+    transparent 15%,
+    transparent 85%,
     white 100%
   );
 }

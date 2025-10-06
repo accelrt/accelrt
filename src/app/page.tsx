@@ -1,13 +1,13 @@
 import TeamMemberGrid from "./TeamMemberGrid";
 import Header from "./Header";
 import ProspectusButton from "./Prospectus";
-import "./blur.css";
+import "./overlay.css";
 
 export default function Home() {
   return (
     <>
       {/* <Header /> */}
-      <main className="max-w-2xl m-auto linear-blur">
+      <main className="max-w-2xl m-auto linear-gradient">
         <div className="h-96 py-72 flex flex-col justify-center ">
           <h1 className="text-6xl font-bold text-center">AccelRT</h1>
           <a href="mailto:aushackathons@gmail.com" className="text-center">
